@@ -1,0 +1,16 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block title %}
+  {{ item.name }}
+{% endblock %}
+
+{% block content_block %}
+  <div class="product-detail">
+    <img src="{% if item.image %}{{ item.image.url }}{% else %}{% static "images/sad_emoji.png" %}{% endif %}">
+    <h1>{{ item.name }}</h1>
+    <h2><a href="{{ item.category.get_absolute_url }}">{{ item.category }}</a></h2>
+    <p class="price">${{ item.price }}</p>
+    {{ item.body|linebreaks }}
+  </div>
+{% endblock %}

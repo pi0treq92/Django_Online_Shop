@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Twoja Manufaktura{% endblock %}</title>
+    <link href="{% static "css/base.css" %}" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <a href="/" class="logo">Twoja Manufaktura</a>
+    </div>
+    <div id="subheader">
+        <div id="cart">
+            Pusty Koszyk
+        </div>
+    </div>
+    <div>
+        {% block content_block %}
+        {% endblock %}
+    </div>
+</body>
+</html>
