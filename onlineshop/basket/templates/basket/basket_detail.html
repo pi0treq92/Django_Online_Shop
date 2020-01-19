@@ -1,0 +1,49 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block title %}
+  Koszyk
+{% endblock %}
+
+{% block content_block %}
+<h1>Koszyk</h1>
+<table class="cart">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Remove</th>
+        <th>Unit price</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in basket %}
+        {% with item=i.item %}
+          <tr>
+            <td>
+              <a href="{{ item.get_absolute_url }}">
+                <img src="{% if item.image %}{{ item.image.url }}{% else %}{% static "images/sad_emoji.png" %}{% endif %}">
+              </a>
+            </td>
+            <td>{{ item.name }}</td>
+            <td>{{ i.quantity }}</td>
+            <td><a href="{% url "basket:basket_remove" item.id %}">Usun</a></td>
+            <td class="num">${{ i.price }} zł</td>
+            <td class="num">${{ i.total_price }} zł</td>
+          </tr>
+        {% endwith %}
+      {% endfor %}
+      <tr class="total">
+        <td>Total</td>
+        <td colspan="4"></td>
+        <td class="num">${{ basket.get_total_price }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="text-right">
+    <a href="{% url "shop:item_list" %}" class="button light">Continue shopping</a>
+    <a href="#" class="button">Checkout</a>
+  </p>
+{% endblock %}

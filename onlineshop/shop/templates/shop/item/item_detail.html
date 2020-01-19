@@ -11,6 +11,11 @@
     <h1>{{ item.name }}</h1>
     <h2><a href="{{ item.category.get_absolute_url }}">{{ item.category }}</a></h2>
     <p class="price">${{ item.price }}</p>
+    <form action="{% url "basket:basket_add" item.id %}" method="post">
+      {{ basket_form }}
+      {% csrf_token %}
+      <input type="submit" value="Dodaj do koszyka">
+    </form>
     {{ item.body|linebreaks }}
   </div>
 {% endblock %}
