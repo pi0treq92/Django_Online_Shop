@@ -41,5 +41,5 @@ def basket_detail(request):
     """
     basket = Basket(request)
     for item in basket:
-        item['update_quantity_form'] = AddItemForm(initial={'quantity': item['quantity'], 'refresh': True})
+        item['refresh_quantity_form'] = AddItemForm(initial={'quantity': item['quantity'], 'refresh': True})
     return render(request, 'basket/basket_detail.html', {'basket': basket})

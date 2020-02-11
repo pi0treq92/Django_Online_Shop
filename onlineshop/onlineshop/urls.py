@@ -22,6 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('basket/', include('basket.urls', namespace='basket')),
     path('', include('shop.urls', namespace='shop')),
+    path('orders/', include('orders.urls', namespace='orders')),
+
 ]
 
 if settings.DEBUG:

@@ -30,10 +30,9 @@
             <td>{{ item.name }}</td>
 
             <td>
-              {{ item.quantity }}
               <form action="{% url "basket:basket_add" item.id %}" method="post">
-                {{ item.basket_form.quantity }}
-                {{ item.basket_form.refresh }}
+                {{ i.refresh_quantity_form.quantity }}
+                {{ i.refresh_quantity_form.refresh }}
                 <input type="submit" value="Change">
                 {% csrf_token %}
               </form>
@@ -53,6 +52,6 @@
   </table>
   <p class="text-right">
     <a href="{% url "shop:item_list" %}" class="button light">Continue</a>
-    <a href="#" class="button">Checkout</a>
+    <a href="{% url "orders:create_order" %}" class="button">Checkout</a>
   </p>
 {% endblock %}

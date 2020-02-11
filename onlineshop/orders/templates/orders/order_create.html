@@ -1,0 +1,34 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block title %}
+  Checkout
+{% endblock %}
+{% block content_block %}
+    <h1>
+        Checkout
+    </h1>
+    <div class="order-info">
+        <h3>
+            Order
+        </h3>
+        <ul>
+            {% for i in basket %}
+                <li>
+                    {{ i.quantity }}x {{ i.item.name }}
+                    <span>{{ i.total_price }} zł</span>
+                </li>
+            {% endfor %}
+        </ul>
+        <p>Total: {{ basket.get_total_price }} zł</p>
+    </div>
+
+    <form action="." method="post" class="order-form">
+        {{ form.as_p }}
+        <p>
+            <input type="submit" value="Make order">
+        </p>
+        {% csrf_token %}
+    </form>
+{% endblock %}
+
