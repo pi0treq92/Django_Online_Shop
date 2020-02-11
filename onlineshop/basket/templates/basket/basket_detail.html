@@ -28,8 +28,17 @@
               </a>
             </td>
             <td>{{ item.name }}</td>
-            <td>{{ i.quantity }}</td>
-            <td><a href="{% url "basket:basket_remove" item.id %}">Usun</a></td>
+
+            <td>
+              {{ item.quantity }}
+              <form action="{% url "basket:basket_add" item.id %}" method="post">
+                {{ item.basket_form.quantity }}
+                {{ item.basket_form.refresh }}
+                <input type="submit" value="Change">
+                {% csrf_token %}
+              </form>
+            </td>
+            <td><a href="{% url "basket:basket_remove" item.id %}">Remove</a></td>
             <td class="num">${{ i.price }} zł</td>
             <td class="num">${{ i.total_price }} zł</td>
           </tr>
@@ -43,7 +52,7 @@
     </tbody>
   </table>
   <p class="text-right">
-    <a href="{% url "shop:item_list" %}" class="button light">Continue shopping</a>
+    <a href="{% url "shop:item_list" %}" class="button light">Continue</a>
     <a href="#" class="button">Checkout</a>
   </p>
 {% endblock %}

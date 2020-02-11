@@ -21,11 +21,25 @@ def basket_add(request, item_id):
     return redirect('basket:basket_detail')
 
 def basket_remove(request, item_id):
+    """
+    Remove item from basket
+    :param request:
+    :param item_id:
+    :return:
+    """
     basket = Basket(request)
     item = get_object_or_404(Item, id=item_id)
     basket.remove_item(item)
     return redirect('basket:basket_detail')
 
 def basket_detail(request):
+    """
+    Method let modify items quantity in basket. AddItemForm instance is created here for each item in basket to let
+    modify quantity.
+    :param request:
+    :return:
+    """
     basket = Basket(request)
+    for item in basket:
+        item['update_quantity_form'] = AddItemForm(initial={'quantity': item['quantity'], 'refresh': True})
     return render(request, 'basket/basket_detail.html', {'basket': basket})
