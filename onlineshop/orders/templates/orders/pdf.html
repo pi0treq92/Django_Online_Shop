@@ -1,0 +1,49 @@
+<html>
+<body>
+  <h1>Twoja Manufaktura</h1>
+  <p>
+    Invoice no. {{ order.id }}</br>
+    <span class="secondary">
+      {{ order.created|date:"M d, Y" }}
+    </span>
+  </p>
+
+  <h3>Bill to</h3>
+  <p>
+    {{ order.name }} {{ order.surname }}<br>
+    {{ order.email }}<br>
+    {{ order.street }} {{order.street_number}}<br>
+    {{ order.code }}, {{ order.city }}
+  </p>
+
+  <h3>Items bought</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in order.items.all %}
+        <tr class="row{% cycle "1" "2" %}">
+          <td>{{ i.item.name }}</td>
+          <td class="num">${{ i.price }}</td>
+          <td class="num">{{ i.quantity }}</td>
+          <td class="num">${{ i.get_cost }}</td>
+        </tr>
+      {% endfor %}
+      <tr class="total">
+        <td colspan="3">Total</td>
+        <td class="num">${{ order.get_total_price_of_order }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="{% if order.paid %}paid{% else %}pending{% endif %}">
+    {% if order.paid %}Paid{% else %}Pending payment{% endif %}
+  </span>
+</body>
+</html>
