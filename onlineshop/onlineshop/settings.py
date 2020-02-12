@@ -125,4 +125,5 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/' # MEDIA_URL set base url address for multimedia files sent by user
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/') # MEDIA_ROOT set local path to files access, dynamically bonding BASE_DIR path
 BASKET_SESSION_ID = 'basket'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
