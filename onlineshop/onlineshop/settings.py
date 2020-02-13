@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -40,11 +41,13 @@ INSTALLED_APPS = [
     'shop',
     'basket',
     'orders',
+    'rosetta',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -106,8 +109,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
+LANGUAGES = (
+    ('en', _('english')),
+    ('pl', _('polish'))
+)
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
@@ -127,4 +134,7 @@ MEDIA_URL = '/media/' # MEDIA_URL set base url address for multimedia files sent
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/') # MEDIA_ROOT set local path to files access, dynamically bonding BASE_DIR path
 BASKET_SESSION_ID = 'basket'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale/'),
+)
 

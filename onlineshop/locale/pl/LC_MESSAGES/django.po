@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-13 22:09+0100\n"
+"PO-Revision-Date: 2020-02-13 22:08+0000\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%"
+"100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%"
+"10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: .\basket\urls.py:9
+msgid "add"
+msgstr "dodaj"
+
+#: .\basket\urls.py:10
+msgid "remove"
+msgstr "usun"
+
+#: .\onlineshop\settings.py:113
+msgid "english"
+msgstr "angielski"
+
+#: .\onlineshop\settings.py:114
+msgid "polish"
+msgstr "polski"
+
+#: .\onlineshop\urls.py:24
+msgid "admin/"
+msgstr "administrator"
+
+#: .\onlineshop\urls.py:26
+msgid "basket/"
+msgstr "koszyk/"
+
+#: .\onlineshop\urls.py:28
+msgid "orders/"
+msgstr "zamowienie"
+
+#: .\shop\templates\shop\base.html:7 .\shop\templates\shop\base.html:12
+msgid "Twoja Manufaktura"
+msgstr "Twoja Manufaktura"
+
+#: .\shop\templates\shop\base.html:17
+msgid "Language"
+msgstr "Język"
+
+#: .\shop\templates\shop\base.html:33
+msgid "Basket"
+msgstr "Koszyk"
+
+#: .\shop\templates\shop\base.html:35
+#, python-format
+msgid ""
+"\n"
+"            %(total_items)s item%(total_items_plural)s,\n"
+"                        %(total_price)s zł "
+msgstr ""
+"\n"
+"%(total_items)s produkt%(total_items_plural)s,\n"
+"%(total_price)s zł "
+
+#: .\shop\templates\shop\base.html:40
+msgid "Basket is empty"
+msgstr "Koszyk jest pusty"
+
+#: .\shop\templates\shop\item\item_detail.html:6
+#, python-format
+msgid ""
+"\n"
+"  %(item.name)s\n"
+msgstr ""
+"\n"
+"%(item.name)s\n"
+
+#: .\shop\templates\shop\item\item_detail.html:20
+msgid "Add to basket"
+msgstr "Dodaj do koszyka"
+
+#: .\shop\templates\shop\item\item_list.html:7
+#, python-format
+msgid ""
+"\n"
+"        %(name)s\n"
+"    "
+msgstr ""
+"\n"
+"%(name)s"
+
+#: .\shop\templates\shop\item\item_list.html:11
+#: .\shop\templates\shop\item\item_list.html:31
+msgid "Items"
+msgstr "Produkty"
+
+#: .\shop\templates\shop\item\item_list.html:18
+msgid "Categories"
+msgstr "Kategorie"
+
+#: .\shop\templates\shop\item\item_list.html:21
+msgid "All"
+msgstr "Wszystko"
+
+#~ msgid "Dodaj do koszyka"
+#~ msgstr "Dodaj do koszyka"

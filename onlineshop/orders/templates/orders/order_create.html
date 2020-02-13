@@ -1,16 +1,17 @@
 {% extends "shop/base.html" %}
+{% load i18n %}
 {% load static %}
 
 {% block title %}
-  Checkout
+  {% trans "Checkout" %}
 {% endblock %}
 {% block content_block %}
     <h1>
-        Checkout
+        {% trans "Checkout" %}
     </h1>
     <div class="order-info">
         <h3>
-            Order
+            {% trans "Order" %}
         </h3>
         <ul>
             {% for i in basket %}
@@ -20,13 +21,13 @@
                 </li>
             {% endfor %}
         </ul>
-        <p>Total: {{ basket.get_total_price }} zł</p>
+        <p>{% trans "Total" %}: {{ basket.get_total_price }} zł</p>
     </div>
 
     <form action="." method="post" class="order-form">
         {{ form.as_p }}
         <p>
-            <input type="submit" value="Make order">
+            <input type="submit" value="{% trans "Make order" %}">
         </p>
         {% csrf_token %}
     </form>
