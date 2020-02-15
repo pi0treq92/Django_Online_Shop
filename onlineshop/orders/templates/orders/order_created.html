@@ -1,13 +1,14 @@
 {% extends "shop/base.html" %}
+{% load i18n %}
 {% load static %}
 
 {% block title %}
-  Thanks!
+  {% trans "Thanks!" %}
 {% endblock %}
 {% block content_block %}
     <h1>
-        Thanks!
+        {% trans "Thanks!" %}
     </h1>
-<p>Your order no. <strong>{{ order.id }}</strong> has been placed correctly</p>
+<p>{% trans "Your order no. " %}<strong>{{ order.id }}</strong>{% trans "has been placed correctly" %}</p>
 {% endblock %}
 

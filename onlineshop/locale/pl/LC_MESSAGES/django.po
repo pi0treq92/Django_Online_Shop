@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-13 22:09+0100\n"
-"PO-Revision-Date: 2020-02-13 22:08+0000\n"
+"POT-Creation-Date: 2020-02-15 13:12+0100\n"
+"PO-Revision-Date: 2020-02-15 13:10+0000\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,6 +19,51 @@ msgstr ""
 "100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%"
 "10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 "X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: .\basket\templates\basket\basket_detail.html:6
+#: .\basket\templates\basket\basket_detail.html:10
+#: .\shop\templates\shop\base.html:33
+msgid "Basket"
+msgstr "Koszyk"
+
+#: .\basket\templates\basket\basket_detail.html:14
+msgid "Image"
+msgstr "Obraz"
+
+#: .\basket\templates\basket\basket_detail.html:15
+msgid "Product"
+msgstr "Produkt"
+
+#: .\basket\templates\basket\basket_detail.html:16
+msgid "Quantity"
+msgstr "Ilość"
+
+#: .\basket\templates\basket\basket_detail.html:17
+#: .\basket\templates\basket\basket_detail.html:41
+#, fuzzy
+#| msgid "remove"
+msgid "Remove"
+msgstr "Usuń"
+
+#: .\basket\templates\basket\basket_detail.html:18
+msgid "Unit price"
+msgstr "Cena/szt."
+
+#: .\basket\templates\basket\basket_detail.html:19
+msgid "Price"
+msgstr "Cena"
+
+#: .\basket\templates\basket\basket_detail.html:48
+msgid "Total"
+msgstr "Całkowita wartość"
+
+#: .\basket\templates\basket\basket_detail.html:55
+msgid "Continue"
+msgstr "Kontynuuj"
+
+#: .\basket\templates\basket\basket_detail.html:56
+msgid "Checkout"
+msgstr "Zapłać"
 
 #: .\basket\urls.py:9
 msgid "add"
@@ -38,7 +83,7 @@ msgstr "polski"
 
 #: .\onlineshop\urls.py:24
 msgid "admin/"
-msgstr "administrator"
+msgstr "administrator/"
 
 #: .\onlineshop\urls.py:26
 msgid "basket/"
@@ -46,7 +91,7 @@ msgstr "koszyk/"
 
 #: .\onlineshop\urls.py:28
 msgid "orders/"
-msgstr "zamowienie"
+msgstr "zamowienie/"
 
 #: .\shop\templates\shop\base.html:7 .\shop\templates\shop\base.html:12
 msgid "Twoja Manufaktura"
@@ -55,10 +100,6 @@ msgstr "Twoja Manufaktura"
 #: .\shop\templates\shop\base.html:17
 msgid "Language"
 msgstr "Język"
-
-#: .\shop\templates\shop\base.html:33
-msgid "Basket"
-msgstr "Koszyk"
 
 #: .\shop\templates\shop\base.html:35
 #, python-format

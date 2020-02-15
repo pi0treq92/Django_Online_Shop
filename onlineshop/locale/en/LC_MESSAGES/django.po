@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-13 22:09+0100\n"
+"POT-Creation-Date: 2020-02-15 13:12+0100\n"
 "PO-Revision-Date: 2020-02-13 22:08+0000\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,51 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: .\basket\templates\basket\basket_detail.html:6
+#: .\basket\templates\basket\basket_detail.html:10
+#: .\shop\templates\shop\base.html:33
+msgid "Basket"
+msgstr "Basket"
+
+#: .\basket\templates\basket\basket_detail.html:14
+msgid "Image"
+msgstr ""
+
+#: .\basket\templates\basket\basket_detail.html:15
+msgid "Product"
+msgstr ""
+
+#: .\basket\templates\basket\basket_detail.html:16
+msgid "Quantity"
+msgstr ""
+
+#: .\basket\templates\basket\basket_detail.html:17
+#: .\basket\templates\basket\basket_detail.html:41
+#, fuzzy
+#| msgid "remove"
+msgid "Remove"
+msgstr "remove"
+
+#: .\basket\templates\basket\basket_detail.html:18
+msgid "Unit price"
+msgstr ""
+
+#: .\basket\templates\basket\basket_detail.html:19
+msgid "Price"
+msgstr ""
+
+#: .\basket\templates\basket\basket_detail.html:48
+msgid "Total"
+msgstr ""
+
+#: .\basket\templates\basket\basket_detail.html:55
+msgid "Continue"
+msgstr ""
+
+#: .\basket\templates\basket\basket_detail.html:56
+msgid "Checkout"
+msgstr ""
 
 #: .\basket\urls.py:9
 msgid "add"
@@ -53,10 +98,6 @@ msgstr "Twoja Manufaktura"
 #: .\shop\templates\shop\base.html:17
 msgid "Language"
 msgstr "Language"
-
-#: .\shop\templates\shop\base.html:33
-msgid "Basket"
-msgstr "Basket"
 
 #: .\shop\templates\shop\base.html:35
 #, python-format
