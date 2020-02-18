@@ -20,5 +20,20 @@
       <input type="submit" value="{% trans "Add to basket" %}">
     </form>
     {{ item.body|linebreaks }}
+    {% if recommendation %}
+      <div>
+        <h3>{% trans "See recommended items: "%}</h3>
+        {% for r in recommendation %}
+          <div>
+            <a href="{{ r.get_absolute_url }}">
+              <img src="{% if r.image %}{{ r.image.url }}{% else %}{% static "images/sad_emoji.png" %}{% endif %}">
+            </a>
+            <p>
+              <a href="{{ r.get_absolute_url }}">{{ r.name }}</a>
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 {% endblock %}

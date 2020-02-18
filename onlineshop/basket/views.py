@@ -3,6 +3,7 @@ from django.views.decorators.http import require_POST
 from shop.models import Item
 from .forms import AddItemForm
 from .basket import Basket
+from shop.recommendation import Recommendation
 
 @require_POST
 def basket_add(request, item_id):
@@ -42,4 +43,7 @@ def basket_detail(request):
     basket = Basket(request)
     for item in basket:
         item['refresh_quantity_form'] = AddItemForm(initial={'quantity': item['quantity'], 'refresh': True})
-    return render(request, 'basket/basket_detail.html', {'basket': basket})
+    recommendation = Recommendation()
+    basket_items = [i['item'] for i in basket]
+    recommended_items = recommendation.suggestion(basket_items, max=3)
+    return render(request, 'basket/basket_detail.html', {'basket': basket, 'recommendation': recommended_items})

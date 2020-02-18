@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'basket',
     'orders',
     'rosetta',
+    'localflavor'
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,6 @@ LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale/'),
 )
 
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1

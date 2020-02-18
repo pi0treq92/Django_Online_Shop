@@ -34,7 +34,7 @@
               <form action="{% url "basket:basket_add" item.id %}" method="post">
                 {{ i.refresh_quantity_form.quantity }}
                 {{ i.refresh_quantity_form.refresh }}
-                <input type="submit" value="{% "Change" %}">
+                <input type="submit" value="{% trans "Change" %}">
                 {% csrf_token %}
               </form>
             </td>
@@ -51,6 +51,21 @@
       </tr>
     </tbody>
   </table>
+  {% if recommendation %}
+        <div>
+          <h3>{% trans "See recommended items: "%}</h3>
+          {% for r in recommendation %}
+            <div>
+              <a href="{{ r.get_absolute_url }}">
+                <img src="{% if r.image %}{{ r.image.url }}{% else %}{% static "images/sad_emoji.png" %}{% endif %}">
+              </a>
+              <p>
+                <a href="{{ r.get_absolute_url }}">{{ r.name }}</a>
+              </p>
+            </div>
+          {% endfor %}
+        </div>
+  {% endif %}
   <p class="text-right">
     <a href="{% url "shop:item_list" %}" class="button light">{% trans "Continue" %}</a>
     <a href="{% url "orders:create_order" %}" class="button">{% trans "Checkout" %}t</a>
