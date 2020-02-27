@@ -1,0 +1,11 @@
+# Rebuild database:
+
+SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = 'onlineshop';
+DROP DATABASE onlineshop;
+CREATE DATABASE onlineshop;
+CREATE USER admin WITH PASSWORD 'admin';
+ALTER ROLE admin SET client_encoding to 'utf8';
+ALTER ROLE admin set timezone to 'UTC';
+GRANT ALL PRIVILEGES ON DATABASE onlineshop TO admin;

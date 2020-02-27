@@ -1,9 +1,10 @@
 from django.contrib import admin
 from .models import Category, Item
+from parler.admin import TranslatableAdmin
 
 
 @admin.register(Category)
-class CategoriesAdministration(admin.ModelAdmin):
+class CategoriesAdministration(TranslatableAdmin):
     """
     ---------------
     :var
@@ -12,12 +13,13 @@ class CategoriesAdministration(admin.ModelAdmin):
                         in this case 'name'
     """
     list_display = ['name', 'slug']
-    prepopulated_fields = {'slug': ('name',)}
-    #
+    def get_prepopulated_fields(self, request, obj=None ):
+        return {'slug': ('name',)}
+
 
 
 @admin.register(Item)
-class ItemsAdministration(admin.ModelAdmin):
+class ItemsAdministration(TranslatableAdmin):
     """
     ---------------
     :var
@@ -28,4 +30,6 @@ class ItemsAdministration(admin.ModelAdmin):
     list_display = ['name', 'price', 'quantity', 'created_at', 'available', 'updated_at', 'slug',]
     list_filter = ['price', 'created_at', 'available',]
     list_editable = ['price', 'available', 'quantity']
-    prepopulated_fields = {'slug': ('name',)}
+
+    def get_prepopulated_fields(self, request, obj=None):
+        return {'slug': ('name',)}

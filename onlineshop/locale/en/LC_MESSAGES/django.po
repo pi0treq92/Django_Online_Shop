@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-15 13:12+0100\n"
-"PO-Revision-Date: 2020-02-13 22:08+0000\n"
+"PO-Revision-Date: 2020-02-27 20:24+0000\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,42 +26,42 @@ msgstr "Basket"
 
 #: .\basket\templates\basket\basket_detail.html:14
 msgid "Image"
-msgstr ""
+msgstr "Image"
 
 #: .\basket\templates\basket\basket_detail.html:15
 msgid "Product"
-msgstr ""
+msgstr "Product"
 
 #: .\basket\templates\basket\basket_detail.html:16
 msgid "Quantity"
-msgstr ""
+msgstr "Quantity"
 
 #: .\basket\templates\basket\basket_detail.html:17
 #: .\basket\templates\basket\basket_detail.html:41
 #, fuzzy
 #| msgid "remove"
 msgid "Remove"
-msgstr "remove"
+msgstr "Remove"
 
 #: .\basket\templates\basket\basket_detail.html:18
 msgid "Unit price"
-msgstr ""
+msgstr "Unit Price"
 
 #: .\basket\templates\basket\basket_detail.html:19
 msgid "Price"
-msgstr ""
+msgstr "Price"
 
 #: .\basket\templates\basket\basket_detail.html:48
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: .\basket\templates\basket\basket_detail.html:55
 msgid "Continue"
-msgstr ""
+msgstr "Continue"
 
 #: .\basket\templates\basket\basket_detail.html:56
 msgid "Checkout"
-msgstr ""
+msgstr "Checkout"
 
 #: .\basket\urls.py:9
 msgid "add"

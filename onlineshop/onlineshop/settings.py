@@ -42,8 +42,10 @@ INSTALLED_APPS = [
     'basket',
     'orders',
     'rosetta',
-    'localflavor'
+    'localflavor',
+    'parler',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -83,8 +85,12 @@ WSGI_APPLICATION = 'onlineshop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'onlineshop',
+        'USER': 'admin',
+        'PASSWORD': 'admin',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -125,6 +131,16 @@ USE_L10N = True
 
 USE_TZ = True
 
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'pl'},
+    ),
+    'default': {
+        'fallback': 'en',
+        'hide_untranslated': False,
+    }
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
@@ -137,6 +153,9 @@ BASKET_SESSION_ID = 'basket'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale/'),
+)
+FIXTURE_DIRS = (
+   os.path.join(BASE_DIR, 'fixtures/'),
 )
 
 REDIS_HOST = 'localhost'

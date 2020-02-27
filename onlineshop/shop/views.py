@@ -14,7 +14,9 @@ def items_list(request, category_filter=None):
     categories = Category.objects.all()
     items = Item.objects.filter(available=True) #filtrowanie tylko dostepnych produktów
     if category_filter:
-        category = get_object_or_404(Category, slug=category_filter)
+        language = request.LANGUAGE_CODE
+        category = get_object_or_404(Category, translations__language_code=language,
+                                     translations__slug=category_filter)
         items = items.filter(category=category)
     return render(request, 'shop/item/item_list.html', {'category': category, 'categories': categories, 'items': items})
 
@@ -26,7 +28,9 @@ def item_detail(request, id, slug):
     :param slug: item slug
     :return:  item_list.html view with the follow dictionary, allows to show and iterating values from the dictionary
     """
-    item = get_object_or_404(Item, id=id, slug=slug, available=True)
+    language = request.LANGUAGE_CODE
+    item = get_object_or_404(Item, id=id, translations__language_code=language,
+                                translations__slug=slug, available=True)
     basket_form = AddItemForm()
     return render(request, 'shop/item/item_detail.html', {'item': item, 'basket_form': basket_form})
 
