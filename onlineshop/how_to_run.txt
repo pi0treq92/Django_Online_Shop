@@ -16,3 +16,7 @@ Install GTK+ for Windows Runtime Environment from:
 https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer
 reboot PC
 pip install -r requirements.txt
+
+# after migrations
+python manage.py loaddata orders.json
+python manage.py loaddata shop.json
