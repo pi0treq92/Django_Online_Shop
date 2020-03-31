@@ -1,2 +1,150 @@
 [
+{
+  "model": "orders.order",
+  "pk": 1,
+  "fields": {
+    "name": "Piotr",
+    "surname": "Migd",
+    "email": "piomig@gmail.com",
+    "street": "Kreta",
+    "street_number": 2,
+    "city": "W\u0142oc\u0142awek",
+    "code": "87800",
+    "created": "2020-03-31T12:51:03.504Z",
+    "updated": "2020-03-31T12:51:03.504Z",
+    "paid": false,
+    "nip": ""
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 2,
+  "fields": {
+    "name": "Piotr",
+    "surname": "Migd",
+    "email": "piomig@gmail.com",
+    "street": "Kreta",
+    "street_number": 2,
+    "city": "W\u0142oc\u0142awek",
+    "code": "87800",
+    "created": "2020-03-31T12:54:15.007Z",
+    "updated": "2020-03-31T12:54:15.007Z",
+    "paid": false,
+    "nip": ""
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 3,
+  "fields": {
+    "name": "Piotr",
+    "surname": "Migd",
+    "email": "piomig@gmail.com",
+    "street": "Kreta",
+    "street_number": 2,
+    "city": "W\u0142oc\u0142awek",
+    "code": "87800",
+    "created": "2020-03-31T13:04:05.347Z",
+    "updated": "2020-03-31T13:16:50.670Z",
+    "paid": true,
+    "nip": ""
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 4,
+  "fields": {
+    "name": "Piotr",
+    "surname": "Migd",
+    "email": "piomig@gmail.com",
+    "street": "Kreta",
+    "street_number": 2,
+    "city": "W\u0142oc\u0142awek",
+    "code": "87800",
+    "created": "2020-03-31T13:04:58.072Z",
+    "updated": "2020-03-31T13:04:58.072Z",
+    "paid": false,
+    "nip": ""
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "item": 1,
+    "price": "99.99",
+    "quantity": 1
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 2,
+  "fields": {
+    "order": 1,
+    "item": 5,
+    "price": "129.99",
+    "quantity": 3
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 3,
+  "fields": {
+    "order": 2,
+    "item": 1,
+    "price": "99.99",
+    "quantity": 1
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 4,
+  "fields": {
+    "order": 2,
+    "item": 5,
+    "price": "129.99",
+    "quantity": 3
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 5,
+  "fields": {
+    "order": 3,
+    "item": 2,
+    "price": "99.99",
+    "quantity": 1
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 6,
+  "fields": {
+    "order": 3,
+    "item": 5,
+    "price": "129.99",
+    "quantity": 3
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 7,
+  "fields": {
+    "order": 4,
+    "item": 1,
+    "price": "99.99",
+    "quantity": 1
+  }
+},
+{
+  "model": "orders.orderitem",
+  "pk": 8,
+  "fields": {
+    "order": 4,
+    "item": 5,
+    "price": "129.99",
+    "quantity": 3
+  }
+}
 ]

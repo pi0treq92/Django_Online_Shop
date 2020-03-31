@@ -1,2 +1,1001 @@
 [
+{
+  "model": "shop.categorytranslation",
+  "pk": 1,
+  "fields": {
+    "language_code": "en",
+    "name": "Shoes",
+    "slug": "shoes",
+    "master": 1
+  }
+},
+{
+  "model": "shop.categorytranslation",
+  "pk": 2,
+  "fields": {
+    "language_code": "pl",
+    "name": "Buty",
+    "slug": "buty",
+    "master": 1
+  }
+},
+{
+  "model": "shop.categorytranslation",
+  "pk": 3,
+  "fields": {
+    "language_code": "en",
+    "name": "Caps",
+    "slug": "caps",
+    "master": 2
+  }
+},
+{
+  "model": "shop.categorytranslation",
+  "pk": 4,
+  "fields": {
+    "language_code": "pl",
+    "name": "Czapki",
+    "slug": "czapki",
+    "master": 2
+  }
+},
+{
+  "model": "shop.categorytranslation",
+  "pk": 5,
+  "fields": {
+    "language_code": "en",
+    "name": "T-shirts",
+    "slug": "t-shirts",
+    "master": 3
+  }
+},
+{
+  "model": "shop.categorytranslation",
+  "pk": 6,
+  "fields": {
+    "language_code": "pl",
+    "name": "Koszulki",
+    "slug": "koszulki",
+    "master": 3
+  }
+},
+{
+  "model": "shop.categorytranslation",
+  "pk": 7,
+  "fields": {
+    "language_code": "pl",
+    "name": "Bluzy",
+    "slug": "bluzy",
+    "master": 4
+  }
+},
+{
+  "model": "shop.categorytranslation",
+  "pk": 8,
+  "fields": {
+    "language_code": "en",
+    "name": "Hoodies",
+    "slug": "hoodies",
+    "master": 4
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 1,
+  "fields": {}
+},
+{
+  "model": "shop.category",
+  "pk": 2,
+  "fields": {}
+},
+{
+  "model": "shop.category",
+  "pk": 3,
+  "fields": {}
+},
+{
+  "model": "shop.category",
+  "pk": 4,
+  "fields": {}
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 1,
+  "fields": {
+    "language_code": "en",
+    "name": "Beige",
+    "slug": "beige",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 1
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 2,
+  "fields": {
+    "language_code": "en",
+    "name": "Burgunds",
+    "slug": "burgunds",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 2
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 3,
+  "fields": {
+    "language_code": "pl",
+    "name": "Burgundowe",
+    "slug": "burgundowe",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 2
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 4,
+  "fields": {
+    "language_code": "pl",
+    "name": "Kozaki",
+    "slug": "kozaki",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 3
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 5,
+  "fields": {
+    "language_code": "en",
+    "name": "Down-town",
+    "slug": "down-town",
+    "info": "",
+    "master": 3
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 6,
+  "fields": {
+    "language_code": "en",
+    "name": "Faith",
+    "slug": "faith",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 4
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 7,
+  "fields": {
+    "language_code": "pl",
+    "name": "Cichobiegi",
+    "slug": "cichobiegi",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 4
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 8,
+  "fields": {
+    "language_code": "pl",
+    "name": "Czarne cichobiegi",
+    "slug": "czarne-cichobiegi",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 5
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 9,
+  "fields": {
+    "language_code": "en",
+    "name": "Black sneakers",
+    "slug": "black-sneakers",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 5
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 10,
+  "fields": {
+    "language_code": "en",
+    "name": "Garamound",
+    "slug": "garamound",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 6
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 11,
+  "fields": {
+    "language_code": "pl",
+    "name": "Cwelki",
+    "slug": "cwelki",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 6
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 12,
+  "fields": {
+    "language_code": "pl",
+    "name": "Martyny",
+    "slug": "martyny",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 7
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 13,
+  "fields": {
+    "language_code": "en",
+    "name": "Martin",
+    "slug": "martin",
+    "info": "",
+    "master": 7
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 14,
+  "fields": {
+    "language_code": "en",
+    "name": "Kinetix",
+    "slug": "kinetix",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 8
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 15,
+  "fields": {
+    "language_code": "pl",
+    "name": "Kinetyki",
+    "slug": "kinetyki",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 8
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 16,
+  "fields": {
+    "language_code": "pl",
+    "name": "Dziady",
+    "slug": "dziady",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 9
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 17,
+  "fields": {
+    "language_code": "en",
+    "name": "Polaris",
+    "slug": "polaris",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 9
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 18,
+  "fields": {
+    "language_code": "en",
+    "name": "Sandals",
+    "slug": "sandals",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 10
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 19,
+  "fields": {
+    "language_code": "pl",
+    "name": "Sadna\u0142y",
+    "slug": "sadnaly",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 10
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 20,
+  "fields": {
+    "language_code": "pl",
+    "name": "Wytrzyma\u0142e",
+    "slug": "wytrzymale",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 11
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 21,
+  "fields": {
+    "language_code": "en",
+    "name": "Resistant",
+    "slug": "resistant",
+    "info": "",
+    "master": 11
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 22,
+  "fields": {
+    "language_code": "en",
+    "name": "2pac",
+    "slug": "2pac",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 12
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 23,
+  "fields": {
+    "language_code": "pl",
+    "name": "2-pac",
+    "slug": "2-pac",
+    "info": "",
+    "master": 12
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 24,
+  "fields": {
+    "language_code": "pl",
+    "name": "Kurier",
+    "slug": "kurier",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 13
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 25,
+  "fields": {
+    "language_code": "en",
+    "name": "Dhl",
+    "slug": "dhl",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 13
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 26,
+  "fields": {
+    "language_code": "en",
+    "name": "Limaohua",
+    "slug": "limaohua",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 14
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 27,
+  "fields": {
+    "language_code": "pl",
+    "name": "Indaianin",
+    "slug": "indaianin",
+    "info": "",
+    "master": 14
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 28,
+  "fields": {
+    "language_code": "pl",
+    "name": "Pyton",
+    "slug": "pyton",
+    "info": "",
+    "master": 15
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 29,
+  "fields": {
+    "language_code": "en",
+    "name": "Python",
+    "slug": "python",
+    "info": "",
+    "master": 15
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 30,
+  "fields": {
+    "language_code": "en",
+    "name": "Pornhub",
+    "slug": "pornhub",
+    "info": "",
+    "master": 16
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 31,
+  "fields": {
+    "language_code": "pl",
+    "name": "porno-bluza",
+    "slug": "porno-bluza",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 16
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 32,
+  "fields": {
+    "language_code": "pl",
+    "name": "Raper",
+    "slug": "raper",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 17
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 33,
+  "fields": {
+    "language_code": "en",
+    "name": "Rapper",
+    "slug": "rapper",
+    "info": "",
+    "master": 17
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 34,
+  "fields": {
+    "language_code": "en",
+    "name": "Slim",
+    "slug": "slim",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 18
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 35,
+  "fields": {
+    "language_code": "pl",
+    "name": "Szczup\u0142a",
+    "slug": "szczupla",
+    "info": "",
+    "master": 18
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 36,
+  "fields": {
+    "language_code": "pl",
+    "name": "Haftowana",
+    "slug": "haftowana",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 19
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 37,
+  "fields": {
+    "language_code": "en",
+    "name": "Haft",
+    "slug": "haft",
+    "info": "",
+    "master": 19
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 38,
+  "fields": {
+    "language_code": "en",
+    "name": "Long",
+    "slug": "long",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 20
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 39,
+  "fields": {
+    "language_code": "pl",
+    "name": "D\u0142uga",
+    "slug": "dluga",
+    "info": "",
+    "master": 20
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 40,
+  "fields": {
+    "language_code": "pl",
+    "name": "Wojskowa",
+    "slug": "wojskowa",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 21
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 41,
+  "fields": {
+    "language_code": "en",
+    "name": "Moro",
+    "slug": "moro",
+    "info": "",
+    "master": 21
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 42,
+  "fields": {
+    "language_code": "en",
+    "name": "Whitecaps",
+    "slug": "whitecaps",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 22
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 43,
+  "fields": {
+    "language_code": "pl",
+    "name": "Bia\u0142a czaka",
+    "slug": "biala-czaka",
+    "info": "",
+    "master": 22
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 44,
+  "fields": {
+    "language_code": "pl",
+    "name": "Du\u017ca",
+    "slug": "duza",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 23
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 45,
+  "fields": {
+    "language_code": "en",
+    "name": "Big",
+    "slug": "big",
+    "info": "",
+    "master": 23
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 46,
+  "fields": {
+    "language_code": "en",
+    "name": "Pink",
+    "slug": "pink",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 24
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 47,
+  "fields": {
+    "language_code": "pl",
+    "name": "R\u00f3\u017cowa",
+    "slug": "rozowa",
+    "info": "",
+    "master": 24
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 48,
+  "fields": {
+    "language_code": "pl",
+    "name": "Jednoro\u017cec",
+    "slug": "jednorozec",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 25
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 49,
+  "fields": {
+    "language_code": "en",
+    "name": "Unicorn",
+    "slug": "unicorn",
+    "info": "",
+    "master": 25
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 50,
+  "fields": {
+    "language_code": "en",
+    "name": "Skull",
+    "slug": "skull",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula felis sagittis augue venenatis eleifend. Nunc eleifend eros quis nisi blandit eleifend. Suspendisse potenti. Duis fermentum tortor magna, eu auctor sapien rhoncus in. Sed consequat est quis arcu rhoncus varius. Cras sodales enim",
+    "master": 26
+  }
+},
+{
+  "model": "shop.itemtranslation",
+  "pk": 51,
+  "fields": {
+    "language_code": "pl",
+    "name": "Czaszka",
+    "slug": "czaszka",
+    "info": "",
+    "master": 26
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "image": "items/2020/03/beige.jpg",
+    "price": "99.99",
+    "quantity": 20,
+    "available": true,
+    "created_at": "2020-03-31T12:13:47.330Z",
+    "updated_at": "2020-03-31T12:13:47.330Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "image": "items/2020/03/burgunds.jpg",
+    "price": "119.99",
+    "quantity": 20,
+    "available": true,
+    "created_at": "2020-03-31T12:14:16.744Z",
+    "updated_at": "2020-03-31T12:14:29.753Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 3,
+  "fields": {
+    "category": 1,
+    "image": "items/2020/03/down_town.jpg",
+    "price": "299.99",
+    "quantity": 10,
+    "available": true,
+    "created_at": "2020-03-31T12:14:53.852Z",
+    "updated_at": "2020-03-31T12:15:06.269Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 4,
+  "fields": {
+    "category": 1,
+    "image": "items/2020/03/faith.jpg",
+    "price": "89.99",
+    "quantity": 20,
+    "available": true,
+    "created_at": "2020-03-31T12:15:25.042Z",
+    "updated_at": "2020-03-31T12:15:46.754Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 5,
+  "fields": {
+    "category": 1,
+    "image": "items/2020/03/fki.jpg",
+    "price": "129.99",
+    "quantity": 20,
+    "available": true,
+    "created_at": "2020-03-31T12:16:11.445Z",
+    "updated_at": "2020-03-31T12:16:27.880Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 6,
+  "fields": {
+    "category": 1,
+    "image": "items/2020/03/garamound.jpg",
+    "price": "249.99",
+    "quantity": 12,
+    "available": true,
+    "created_at": "2020-03-31T12:17:12.543Z",
+    "updated_at": "2020-03-31T12:17:24.918Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 7,
+  "fields": {
+    "category": 1,
+    "image": "items/2020/03/martin.jpg",
+    "price": "399.99",
+    "quantity": 15,
+    "available": true,
+    "created_at": "2020-03-31T12:17:49.207Z",
+    "updated_at": "2020-03-31T12:17:56.480Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 8,
+  "fields": {
+    "category": 1,
+    "image": "items/2020/03/kinetix.jpg",
+    "price": "49.99",
+    "quantity": 30,
+    "available": true,
+    "created_at": "2020-03-31T12:18:22.306Z",
+    "updated_at": "2020-03-31T12:18:30.727Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 9,
+  "fields": {
+    "category": 1,
+    "image": "items/2020/03/polaris.jpg",
+    "price": "109.99",
+    "quantity": 40,
+    "available": true,
+    "created_at": "2020-03-31T12:18:54.170Z",
+    "updated_at": "2020-03-31T12:19:03.022Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 10,
+  "fields": {
+    "category": 1,
+    "image": "items/2020/03/sandals.jpg",
+    "price": "39.99",
+    "quantity": 20,
+    "available": true,
+    "created_at": "2020-03-31T12:19:23.478Z",
+    "updated_at": "2020-03-31T12:19:34.465Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 11,
+  "fields": {
+    "category": 1,
+    "image": "items/2020/03/resistant.jpg",
+    "price": "139.99",
+    "quantity": 0,
+    "available": true,
+    "created_at": "2020-03-31T12:19:58.767Z",
+    "updated_at": "2020-03-31T12:20:07.981Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 12,
+  "fields": {
+    "category": 4,
+    "image": "items/2020/03/2pac.jpg",
+    "price": "199.99",
+    "quantity": 10,
+    "available": true,
+    "created_at": "2020-03-31T12:20:27.774Z",
+    "updated_at": "2020-03-31T12:20:54.513Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 13,
+  "fields": {
+    "category": 4,
+    "image": "items/2020/03/dhl.jpg",
+    "price": "49.99",
+    "quantity": 5,
+    "available": true,
+    "created_at": "2020-03-31T12:21:12.358Z",
+    "updated_at": "2020-03-31T12:30:21.608Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 14,
+  "fields": {
+    "category": 4,
+    "image": "items/2020/03/limaohua.jpg",
+    "price": "299.99",
+    "quantity": 10,
+    "available": true,
+    "created_at": "2020-03-31T12:21:49.236Z",
+    "updated_at": "2020-03-31T12:22:01.686Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 15,
+  "fields": {
+    "category": 4,
+    "image": "items/2020/03/payton.jpg",
+    "price": "30.00",
+    "quantity": 12,
+    "available": true,
+    "created_at": "2020-03-31T12:22:24.776Z",
+    "updated_at": "2020-03-31T12:22:45.936Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 16,
+  "fields": {
+    "category": 4,
+    "image": "items/2020/03/pornhub.jpg",
+    "price": "99.00",
+    "quantity": 20,
+    "available": true,
+    "created_at": "2020-03-31T12:23:15.880Z",
+    "updated_at": "2020-03-31T12:23:34.470Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 17,
+  "fields": {
+    "category": 4,
+    "image": "items/2020/03/rapper.jpg",
+    "price": "89.00",
+    "quantity": 20,
+    "available": true,
+    "created_at": "2020-03-31T12:24:02.670Z",
+    "updated_at": "2020-03-31T12:24:10.550Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 18,
+  "fields": {
+    "category": 4,
+    "image": "items/2020/03/slim.jpg",
+    "price": "119.99",
+    "quantity": 20,
+    "available": true,
+    "created_at": "2020-03-31T12:24:31.908Z",
+    "updated_at": "2020-03-31T12:24:48.671Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 19,
+  "fields": {
+    "category": 2,
+    "image": "items/2020/03/haft.jpg",
+    "price": "25.00",
+    "quantity": 20,
+    "available": true,
+    "created_at": "2020-03-31T12:25:10.422Z",
+    "updated_at": "2020-03-31T12:25:20.986Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 20,
+  "fields": {
+    "category": 2,
+    "image": "items/2020/03/long.jpg",
+    "price": "249.99",
+    "quantity": 5,
+    "available": true,
+    "created_at": "2020-03-31T12:25:42.008Z",
+    "updated_at": "2020-03-31T12:25:48.395Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 21,
+  "fields": {
+    "category": 2,
+    "image": "items/2020/03/moro.jpg",
+    "price": "29.99",
+    "quantity": 20,
+    "available": true,
+    "created_at": "2020-03-31T12:26:13.217Z",
+    "updated_at": "2020-03-31T12:26:19.932Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 22,
+  "fields": {
+    "category": 2,
+    "image": "items/2020/03/whitecap.jpg",
+    "price": "23.00",
+    "quantity": 10,
+    "available": true,
+    "created_at": "2020-03-31T12:26:48.345Z",
+    "updated_at": "2020-03-31T12:26:56.937Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 23,
+  "fields": {
+    "category": 2,
+    "image": "",
+    "price": "14.99",
+    "quantity": 20,
+    "available": true,
+    "created_at": "2020-03-31T12:27:15.024Z",
+    "updated_at": "2020-03-31T12:27:20.975Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 24,
+  "fields": {
+    "category": 3,
+    "image": "items/2020/03/pink.jpg",
+    "price": "19.00",
+    "quantity": 20,
+    "available": true,
+    "created_at": "2020-03-31T12:27:42.799Z",
+    "updated_at": "2020-03-31T12:27:49.360Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 25,
+  "fields": {
+    "category": 3,
+    "image": "items/2020/03/unicorn.jpg",
+    "price": "69.99",
+    "quantity": 20,
+    "available": true,
+    "created_at": "2020-03-31T12:28:10.632Z",
+    "updated_at": "2020-03-31T12:28:40.828Z"
+  }
+},
+{
+  "model": "shop.item",
+  "pk": 26,
+  "fields": {
+    "category": 3,
+    "image": "items/2020/03/skull.jpg",
+    "price": "99.99",
+    "quantity": 20,
+    "available": true,
+    "created_at": "2020-03-31T12:29:23.911Z",
+    "updated_at": "2020-03-31T12:29:32.995Z"
+  }
+}
 ]
