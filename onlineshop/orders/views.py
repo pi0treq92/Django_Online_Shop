@@ -27,7 +27,9 @@ def create_order(request):
             for i in basket:
                 OrderItem.objects.create(order=order, item=i['item'], price=i['price'], quantity=i['quantity'])
             basket.drop_basket()
-            created_order.delay(order.id)
+            created_order(order.id)
+            #for celery asynchronous tasks
+            #created_order.delay(order.id)
             return render(request, 'orders/order_created.html', {'order': order})
     else:
         form = OrderForm()

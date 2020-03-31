@@ -2,7 +2,8 @@ from celery import task
 from django.core.mail import send_mail
 from .models import Order
 
-@task
+#@task
+#celery asnynchronus
 def created_order(order_id):
     """
     Method sends notification as email after order object is created.
