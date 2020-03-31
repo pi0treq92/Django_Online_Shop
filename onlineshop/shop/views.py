@@ -1,6 +1,17 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Category, Item
 from basket.forms import  AddItemForm
+from django.views.generic.list import ListView
+
+
+class ManageItemListView(ListView):
+    model = Item
+    template_name = 'shop/templates/shop/item/list.html'
+
+    def get_queryset(self):
+        qs = super(ManageItemListView, self).get_queryset()
+        return qs.filter(owner=self.request.user)
+
 
 def items_list(request, category_filter=None):
     """

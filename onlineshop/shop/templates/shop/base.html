@@ -25,6 +25,15 @@
             {% endfor %}
           </ul>
         </div>
+        <div>
+            <ul class="menu">
+                {% if request.user.is_authenticated %}
+                    <li><a href="{% url "logout" %}">Wyloguj</a></li>
+                {% else %}
+                    <li><a href="{% url "login" %}">Zaloguj</a></li>
+                {% endif %}
+            </ul>
+        </div>
     </div>
     <div id="subheader">
         <div id="cart">
